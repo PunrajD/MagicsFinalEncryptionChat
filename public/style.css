@@ -1,0 +1,98 @@
+body {
+    background-color: #121212;
+    color: #00ff00;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#chat-container {
+    width: 80%;
+    max-width: 600px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+#messages {
+    height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+#message-input {
+    width: calc(100% - 60px);
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #2e2e2e;
+    color: #00ff00;
+}
+
+#send-button {
+    width: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00ff00;
+    color: #121212;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    background-color: #00cc00;
+}
+
+.message {
+    margin-bottom: 10px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#dropZone {
+    width: 400px;
+    height: 150px;
+    border: 2px dashed #555;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#dropZone:hover {
+    background-color: #333;
+}
+
+#output {
+    width: 400px;
+    background-color: #333;
+    color: #0f0;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+}
